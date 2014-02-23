@@ -1,7 +1,7 @@
 jquery-multilang
 ================
 
-Simple multilanguage plugin for jquery.
+Simple and fast multilanguage plugin for jquery.
 
 
 Usage
