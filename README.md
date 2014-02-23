@@ -8,14 +8,14 @@ Simple multilanguage plugin for jquery.
 Usage
 =====
 
-1. Put the attribute tkey in each element you want to translate:
+* Put the attribute tkey in each element you want to translate:
 
 ```html
 <p tkey="string-key-example"></p>
 ```
 
 
-2. Modify the lang json files, having one translated string for each tkey in 
+* Modify the lang json files, having one translated string for each tkey in 
 each language file:
 
 ```json
@@ -23,7 +23,7 @@ each language file:
 ```
 
 
-3. Load jquery.js and lang.js at the end of the HTML file:
+* Load jquery.js and lang.js at the end of the HTML file:
 
 ```html
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
