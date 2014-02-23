@@ -1,0 +1,4 @@
+{
+    "example1" : "Example n1",
+    "example2" : "Example n2"
+}
