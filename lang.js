@@ -1,5 +1,5 @@
 var langs = ['en', 'it'];
-var langCode = '';
+var langCode = 'automatic';			//Write the default Value from langs into it
 var langJS = null;
 
 
@@ -12,13 +12,14 @@ var translate = function (jsdata)
 	});
 }
 
+if(langCode == 'automatic'){
+	langCode = navigator.language.substr (0, 2);
+}
 
-langCode = navigator.language.substr (0, 2);
-
-if (langCode in langs)
+if ($.inArray( langCode, langs ) >= 0){
 	$.getJSON('lang/'+langCode+'.json', translate);
-else
+}else{
 	$.getJSON('lang/en.json', translate);
-
+}
 
 
